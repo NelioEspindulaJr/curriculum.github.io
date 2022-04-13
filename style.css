@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Harashi';
+    src: url("HarashiFree.ttf");
+}
+
+.background-image{
+    background-image: url("https://thumbs.gfycat.com/BetterEnchantingCrane-size_restricted.gif");
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: relative;
+}
+
+.content{
+    background-color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    z-index: 0;
+    border-radius: 15px;
+}
+
+.profile-image{
+    position: absolute;
+    width: 100vw;
+    height: 500px;
+    z-index: 1;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+#title{
+    font-family: 'Harashi';
+    z-index: 2;
+    font-size: 6em;
+    color: white;
+    text-shadow: 5px 3px 10px #26282b;
+    overflow: hidden;
+}
+
+.formacao{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+}
+
+a img{
+    width: 64px;
+    height: 64px;
+    z-index: 3;
+}
+
+.hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+p {
+    text-align: justify;
+}
+
+.nelio-pfp{
+    height: fit-content;
+}
+
+.nelio-pfp1{
+    padding: 50px;
+}
